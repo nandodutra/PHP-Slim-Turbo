@@ -1,0 +1,24 @@
+{
+  "name": "nettuts/slim-mvc",
+  "authors": [
+        {
+            "name": "Fernando Dutra Neres",
+            "email": "fernando@inova2b.com.br"
+        }
+  ],
+  "require": {
+        "php": ">=5.3",
+        "slim/slim": "*",
+        "slim/extras": "*",
+        "twig/twig": "*",
+        "php-activerecord/php-activerecord": "dev-master",
+        "symfony/yaml": "2.2.*@dev"
+  },
+    "autoload": {
+        "psr-0": {
+            "Nettuts": "vendor/",
+            "Controller": "./",
+            "Models": "./"
+        }
+    }
+}

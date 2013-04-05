@@ -1,0 +1,7 @@
+#Definções de rotas
+
+principal:
+  route: '/:id'
+  path: ''
+  conditions: 
+    id: '[0-9]+'
