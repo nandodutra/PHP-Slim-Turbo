@@ -9,7 +9,7 @@ define('PS', PATH_SEPARATOR);
 
 
 //Configuração do ORM PHPActiveRecord
-$dns = 'mysql://root:123@localhost/teixeiradefreitas_saude2;charset=utf8';
+$dns = 'mysql://root:123@localhost/testes;charset=utf8';
 
 \ActiveRecord\Config::initialize(function($cfg) use($dns) {
     $cfg->set_model_directory(ROOT . DS . 'Models/');
