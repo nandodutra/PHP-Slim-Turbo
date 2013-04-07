@@ -14,4 +14,10 @@ class Helper {
 
 	}
 
+	static function getViewInfo() {
+		$array = Yaml::parse(file_get_contents('../config/view.yml'));
+
+		return $array;
+	}
+
 }

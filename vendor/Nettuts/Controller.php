@@ -1,6 +1,8 @@
 <?php
  
 namespace Nettuts;
+
+use \Nettuts\Helper;
  
 class Controller extends \Slim\Slim
 {
@@ -9,6 +11,7 @@ class Controller extends \Slim\Slim
     public function __construct()
     {
         $settings = require("../settings.php");
+   
         if (isset($settings['model'])) {
             $this->data = $settings['model'];
         }
@@ -17,9 +20,16 @@ class Controller extends \Slim\Slim
 
     public function render($name, $data = array(), $status = null)
 	{
+		$viewInfo = Helper::getViewInfo();
+		echo $name;
+		foreach (isset($viewInfo[$name]) ? $viewInfo[$name] : $viewInfo['default'] as $key => $value) {
+			$data[$key] = $value;
+		}
+
 	    if (strpos($name, ".php") === false) {
 	        $name = $name . ".php";
 	    }
+
 	    parent::render($name, $data, $status);
 	}
 

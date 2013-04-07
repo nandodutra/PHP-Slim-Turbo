@@ -1,7 +1,10 @@
 #Definções de rotas
-
 principal:
   route: '/:id'
   path: ''
   conditions: 
     id: '[0-9]+'
+
+login:
+  route: '/login'
+  path: 'Login:index@get'

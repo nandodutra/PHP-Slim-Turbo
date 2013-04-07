@@ -1,0 +1,7 @@
+default:
+  title: 'Just a little bit test'
+  css: ['estilo.css', 'bootstrap.css']
+  js: ['jquery.min.js']
+
+Login:index@get:
+  title: 'Acesso ao sistema'

@@ -43,9 +43,9 @@ class Router
 	        $func = $this->processCallback($route['path']);
 
 	        $r = new \Slim\Route($route['route'], $func);
-	        
-	        $r->conditions($route['conditions']);
-	        
+	        if(isset($route['conditions'])) {
+	        	$r->conditions($route['conditions']);
+	        }
 	        $r->setHttpMethods(strtoupper($method));
 
 	        array_push($this->routes, $r);

@@ -8,7 +8,10 @@ class Main extends \Nettuts\Controller
 	{
 		$pessoa = \Models\Pessoa::find($id);
 
-	    $this->render("inicio/test", array("title" => $pessoa->descricao, "name" => "Home"));
+	    $this->render("inicio/test", array(
+	    
+	    		"name" => "Home"
+	    	));
 	}
  
     public function test($title)
