@@ -20,9 +20,9 @@ class Controller extends \Slim\Slim
 
     public function render($name, $data = array(), $status = null)
 	{
-		$viewInfo = Helper::getViewInfo();
-		echo $name;
-		foreach (isset($viewInfo[$name]) ? $viewInfo[$name] : $viewInfo['default'] as $key => $value) {
+		$viewInfo = Helper::getViewInfo($name);
+
+		foreach ($viewInfo as $key => $value) {
 			$data[$key] = $value;
 		}
 

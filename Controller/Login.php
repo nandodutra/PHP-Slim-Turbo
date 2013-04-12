@@ -11,4 +11,8 @@ class Login extends Controller {
 		$this->render('login/index', array('title'=>'teste'));
 	}
 
+	public function auth() {
+		$this->redirect('/login');
+	}
+
 }

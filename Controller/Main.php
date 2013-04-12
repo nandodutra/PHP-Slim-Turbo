@@ -6,7 +6,7 @@ class Main extends \Nettuts\Controller
 {
     public function index($id)
 	{
-		$pessoa = \Models\Pessoa::find($id);
+		$pessoa = \Models\User::find($id);
 
 	    $this->render("inicio/test", array(
 	    

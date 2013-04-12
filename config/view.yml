@@ -1,7 +1,7 @@
 default:
-  title: 'Just a little bit test'
-  css: ['estilo.css', 'bootstrap.css']
-  js: ['jquery.min.js']
+  title: 'iReport'
+  css: ['bootstrap.min.css', 'bootstrap-responsive.min.css', 'custom-style.css']
+  js: ['jquery-1.9.1.min.js', 'bootstrap.min.js', 'custom-script.js']
 
-Login:index@get:
+inicio/login:
   title: 'Acesso ao sistema'

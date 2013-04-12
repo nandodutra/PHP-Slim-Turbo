@@ -12,13 +12,15 @@
         "slim/extras": "*",
         "twig/twig": "*",
         "php-activerecord/php-activerecord": "dev-master",
-        "symfony/yaml": "2.2.*@dev"
+        "symfony/yaml": "2.2.*@dev",
+        "phpunit/phpunit": "3.7.19"
   },
-    "autoload": {
-        "psr-0": {
-            "Nettuts": "vendor/",
-            "Controller": "./",
-            "Models": "./"
-        }
-    }
+  "autoload": {
+       "psr-0": {
+          "Nettuts": "vendor/",
+          "Controller": "./",
+          "Models": "./"
+      }
+  }
+
 }

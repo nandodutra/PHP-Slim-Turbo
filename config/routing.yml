@@ -8,3 +8,7 @@ principal:
 login:
   route: '/login'
   path: 'Login:index@get'
+
+auth:
+  route: '/auth'
+  path: 'Login:auth@post'
